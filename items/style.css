@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'florensans';
+    src: url('./fonts/Florensans.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Rossetti W00 Regular";
+    src: url('./fonts/Rossetti-W00-Regular.woff2') format('woff2'),
+         url('./fonts/Rossetti-W00-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('./fonts/Helvetica.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background: linear-gradient(#E8D8C4, #8b795d);
+    height: 100vh;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    background: #E8D8C4;
+    z-index: -1;
+    border:#561C24 2px solid;
+}
+
+::-webkit-scrollbar-button{
+    display:none;
+    background: #E8D8C4;
+    z-index: -1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6D2932;
+    z-index: 3;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #561C24;
+}
+.upper-seperation {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    height:10vh;
+    width: 100vw;
+    z-index: 2;
+    background: #6D2932;
+    border-bottom: #0b0b0b 2px solid;
+}
+.logo {
+    position: absolute;
+    left: 26vw;
+    top: 0vh;
+    transform: scale(0.5);
+}
+.name {
+    position: absolute;
+    top: -85vh;
+    left: -26.5vw;
+    z-index: 3;
+    transform: scale(0.38);
+}
+.line-seperation {
+    position: absolute;
+    background: #561C24;
+    height: 2px;
+    width: 14vw;
+    top: 13.25vh;
+    left: 10vw;
+}
+.mug {
+    position: absolute;
+    top: 6vh;
+    left: 3.5vw;
+    z-index: 2;
+    transform: scale(0.3)
+}
+.motto {
+    position: absolute;
+    font-family: 'Rossetti W00 Regular';
+    font-size: 1.5vw;
+    top: 14vh;
+    left:10.5vw;
+    z-index: 3;
+    color: #561C24;
+}
+.grp1 {
+    position: absolute;
+    top: 30vh;
+    left: 33vw;
+    width: 30vw;
+    transform: scale(1.5);
+}
+.order {
+    position: absolute;
+    top: 70vh;
+    left: 44vw;
+    width: 10vw;
+    height: 10vh;
+    border-radius:100px;
+    background: #6D2932;
+    box-shadow: 1px 1px 0px #561C24;
+    color: #E8D8C4;
+    font-size: 1.5vw;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow 500ms ease-in-out;
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+}
+.order:hover {
+    box-shadow: 5px 5px 5px #0b0b0b;
+    transition: box-shadow 500ms ease-in-out;
+}
+.top-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 15vh;
+    background:#4c6444;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    z-index: 2;
+}
+.seperation-first {
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    left: 0;
+    height: 2px;
+    background: #561C24;
+    z-index: 2;
+}
+.about-us {
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    left: 0;
+    width: 100vw;
+    background:#C7B7A3;
+    z-index:1;
+}
+.about {
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    width: 70vw;
+    color:#561C24;
+}
+.idea {
+    font-family: 'florensans';
+    font-size: 5vw;
+}
+.desc {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    font-size: 1.4vw;
+}
+.logos svg {
+    height: 60px;
+    cursor: pointer;
+}
+.products {
+    font-family: 'florensans';
+    font-size: 4vw;
+}
+.descr {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+.details {
+    position: absolute;
+    width: 100vw;
+    height: 130vh;
+    left: 0;
+    top: 200vh;
+    background: #4c6444;
+}
+.cup {
+    position: absolute;
+    left: 35vw;
+    top: 0vh;
+    filter: drop-shadow(-1vw 1vw 1vw #0b0b0b);
+    transform: scale(1) rotate(-15deg);
+    z-index: 3;
+}
+.why {
+    position: absolute;
+    left: 5vw;
+    top: 20vh;
+    width: 70vw;
+    color:#E8D8C4;
+}
+.us, .drink {
+    font-family: 'florensans';
+    font-size: 4vw;
+}
+.bag {
+    position: absolute;
+    left: -10vw;
+    top: 60vh;
+    filter: drop-shadow(-1vw 1vw 1vw #0b0b0b);
+    transform: scale(1) rotate(0deg);
+    z-index: 3;
+}
+.sustainability, .today {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.4vw;
+}
+.drink-it-today {
+    position: absolute;
+    right: 5vw;
+    top: 80vh;
+    width: 70vw;
+    text-align: right;
+    color:#E8D8C4;
+}
+.final {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 330vh;
+    overflow: hidden;
+}
+.final .jet {
+    background: #6D2932;
+    width: 100vw;
+    height: 95vh;
+}
+.final .jet .eyes {
+    position: relative;
+    left: 40%;
+    top: 40%;
+    transform: scale(0.6) translate(-50%, -50%);
+    z-index: 2;
+    filter: drop-shadow(0 0 5vw #0b0b0b) drop-shadow(0 0 5vw #0b0b0b);
+}
+.final .jet .names {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.final .jet > .names {
+    top:-75vh;
+}
+.final .jet > .names + .names {
+    top:-45vh;
+}
+.final .jet > .names + .names + .names {
+    top:-15vh;
+}
+.back {
+    position: relative;
+    top: 0vh;
+    left: 0;
+    width: 98.7vw;
+    height: 5vh;
+    text-align: right;
+    font-family: 'Rossetti W00 Regular';
+    color: #561C24;
+    font-size: 1.4vw;
+    cursor: pointer;
+    background :#C7B7A3;
+}
